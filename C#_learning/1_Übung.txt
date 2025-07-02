@@ -1,0 +1,52 @@
+using System.Threading.Channels;
+/*
+1. Übung
+Schreiben Sie ein Programm, das zwei Zahlen vom Benutzer einliest und anschließend die Summe,
+Differenz und das Produkt dieser Zahlen berechnet und ausgibt.
+Hinweis: Lösen Sie die Aufgabe einmal mit einer Typumwandlung von string zu int
+und einmal ohne Typumwandlung, indem Sie direkt mit Ganzzahlen (int) arbeiten.
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Teil 1 – Mit Convert.ToInt32()
+        Console.WriteLine("Geben Sie die erste Zahl ein:");
+        string eingabe1 = Console.ReadLine();
+
+        Console.WriteLine("Geben Sie die zweite Zahl ein:");
+        string eingabe2 = Console.ReadLine();
+
+        int zahl1 = Convert.ToInt32(eingabe1);
+        int zahl2 = Convert.ToInt32(eingabe2);
+
+        Console.WriteLine("Summe: " + (zahl1 + zahl2));
+        Console.WriteLine("Differenz: " + (zahl1 - zahl2));
+        Console.WriteLine("Produkt: " + (zahl1 * zahl2));
+
+        Console.WriteLine(); // Leerzeile zur Trennung der Ausgaben
+
+        // Teil 2 – Mit int.Parse()
+        Console.WriteLine("Geben Sie die erste Zahl ein:");
+        int zahl_1 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Geben Sie die zweite Zahl ein:");
+        int zahl_2 = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Summe: " + (zahl_1 + zahl_2));
+        Console.WriteLine("Differenz: " + (zahl_1 - zahl_2));
+        Console.WriteLine("Produkt: " + (zahl_1 * zahl_2));
+    }
+}
+
+/*
+Zuerst habe ich die Aufgabenstellung gelesen. Dann habe ich Console.WriteLine geschrieben.
+Dieser Befehl gibt eine Nachricht auf der Konsole aus mit dem Text: „Geben Sie die erste Zahl ein:“.
+Danach habe ich Console.ReadLine() verwendet, damit der Benutzer eine Zahl eingeben kann.
+Den Typ string habe ich mit Convert.ToInt32() in eine Ganzzahl (int) umgewandelt.
+Am Ende habe ich Console.WriteLine geschrieben, um Summe, Differenz und Produkt auszugeben.
+Im zweiten Teil habe ich stattdessen int.Parse() verwendet.
+*/
