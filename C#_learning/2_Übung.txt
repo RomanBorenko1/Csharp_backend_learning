@@ -1,0 +1,57 @@
+using System.Threading.Channels;
+/*
+1 Ubung
+Schreiben Sie ein Programm, das zwei Zahlen vom Benutzer einliest und danach die Summe,
+Differenz und das Produkt dieser Zahlen berechnet und ausgibt.
+Hinweis: Lösen Sie die Aufgabe einmal mit einer Typumwandlung von string zu int und einmal
+ohne Typumwandlung, indem Sie direkt mit Ganzzahlen (int) arbeiten.
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        //die Aufgabe 1
+        // Schreiben Sie ein Programm, das zwei ganze Zahlen vom Benutzer einliest und deren
+        // arithmetisches Mittel berechnet und ausgibt.
+
+        string Zahlen = Console.ReadLine();
+        int a = Convert.ToInt32(Zahlen);
+
+        string Zahlen_1 = Console.ReadLine();
+        int b = int.Parse(Zahlen_1);
+
+        Console.WriteLine((a + b) / (double)2);
+
+
+
+        //die Aufgabe 2 
+        // Erstellen Sie ein Programm, das drei ganze Zahlen vom Benutzer einliest.
+        // Das Programm soll die Summe und das Produkt dieser drei Zahlen berechnen
+        // und auf dem Bildschirm ausgeben.
+
+        int y = int.Parse(Console.ReadLine());
+
+        int x = int.Parse(Console.ReadLine());
+
+        int c = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("die Summe: " + (y + x + c));
+        Console.WriteLine("das Produkt: " + (y * x * c));
+
+        //die Aufgabe 3
+        //Schreiben Sie ein Währungsumrechnungsprogramm, das einen Betrag in Euro vom Benutzer
+        //einliest und diesen Betrag mit einem festen Wechselkurs (1 Euro = 1.1821 Dollar)
+        //in US-Dollar umrechnet. Geben Sie das Ergebnis mit zwei Nachkommastellen aus.
+
+        Console.WriteLine("Введите евро");
+        int euro = int.Parse(Console.ReadLine());
+        double kurs = 1.1821;
+        double dollar = euro * kurs;
+        Console.WriteLine(euro + " Евро в долларах будет равно: " + dollar);
+
+    }
+}
+
