@@ -1,0 +1,52 @@
+using System.Threading.Channels;
+/*
+Aufgabe 1: Einfacher Inkrement-Test
+Beschreibung:
+Erstelle eine Variable int x = 10;
+Erhöhe x zweimal mit dem postfix-Inkrement (x++).
+Gib danach den Wert von x auf der Konsole aus.
+
+
+Aufgabe 2: Präfix vs. Postfix
+Beschreibung:
+Erstelle eine Variable int y = 5;
+Erstelle eine zweite Variable int z = ++y;
+Gib danach y und z auf der Konsole aus.
+Dann erhöhe y mit postfix (y++) und gib y nochmal aus.
+
+
+
+Aufgabe 3: Rückwärts zählen ohne Schleife
+Beschreibung:
+Erstelle eine Variable int n = 3;
+Verwende den Dekrementoperator (n--), um dreimal den Wert auszugeben: 
+einmal vor jedem Dekrement.
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        //Aufgabe 1
+        int x = 10;
+        x++;
+        x++;
+        Console.WriteLine(x);
+
+
+        //Aufgabe 2
+        int y = 5;
+        int z = ++y;
+        Console.WriteLine($"y: {y}, z: {z}");
+        y++;
+        Console.WriteLine($"y: {y}, z: {z}");
+
+        //Aufgabe 3
+        int n = 3;
+        Console.WriteLine(n);
+        Console.WriteLine(--n);
+        Console.WriteLine(--n);
+    }
+}
