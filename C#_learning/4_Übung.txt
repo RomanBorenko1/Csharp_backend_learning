@@ -1,0 +1,52 @@
+using System.Threading.Channels;
+/*
+Aufgabe 1: Zahl auf Gerade prüfen
+Schreiben Sie ein Programm, das eine Zahl vom Benutzer einliest und überprüft, 
+ob die Zahl gerade oder ungerade ist. Geben Sie eine entsprechende Meldung aus.
+
+
+
+Aufgabe 2: Temperaturkontrolle
+Schreiben Sie ein Programm, das die Temperatur einliest. 
+Wenn die Temperatur über 30 Grad ist, soll das Programm „Es ist heiß“ ausgeben. 
+Wenn die Temperatur unter 10 Grad ist, 
+soll es „Es ist kalt“ ausgeben. Ansonsten soll es „Angenehme Temperatur“ ausgeben
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        //Aufgabe 1
+
+        int Zahl = int.Parse(Console.ReadLine());
+        if (Zahl % 2 == 0)
+        {
+            Console.WriteLine("die Zahl gerade ist");
+        }
+        else 
+        {
+            Console.WriteLine("die Zahl ungerade ist");
+        }
+
+
+        //Aufgabe 2
+
+        int Temperatur = int.Parse(Console.ReadLine());
+        if (Temperatur > 30)
+        {
+            Console.WriteLine("Es ist heiß");
+        }
+
+        else if (Temperatur < 10)
+        {
+            Console.WriteLine("Angenehme Temperatur");
+        }
+        else
+        {
+            Console.WriteLine("Angenehme Temperatur");
+        }    
+    }
+}
