@@ -1,0 +1,63 @@
+using System.Threading.Channels;
+/*
+Erstellen Sie einen einfachen Rechner mit if und switch.
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Erste Variante mit if
+        Console.WriteLine("Geben Sie die erste Zahl ein");
+        int nummer_1 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Geben Sie die zweite Zahl ein");
+        int nummer_2 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Symbol eingeben");
+        string str = Console.ReadLine();
+        if (str == "-")
+        {
+            Console.WriteLine(nummer_1 - nummer_2);
+        }
+        else if (str == "+")
+        {
+            Console.WriteLine(nummer_1 + nummer_2);
+        }
+        else if (str == "*")
+        {
+            Console.WriteLine(nummer_1 * nummer_2);
+        }
+        else if (str == "/")
+        {
+            Console.WriteLine(nummer_1 / nummer_2);
+        }
+        // Zweite Variante mit switch
+
+        Console.WriteLine("Geben Sie die erste Zahl ein");
+        int n_1 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Geben Sie die zweite Zahl ein");
+        int n_2 = int.Parse(Console.ReadLine());
+        Console.WriteLine("Symbol eingeben");
+        string strin = Console.ReadLine();
+        switch (strin)
+        {
+            case "+":
+                Console.WriteLine(nummer_1 + nummer_2);
+                break;
+            case "*":
+                Console.WriteLine(nummer_1 * nummer_2);
+                break;
+            case "-":
+                Console.WriteLine(nummer_1 - nummer_2);
+                break;
+            case "/":
+                Console.WriteLine(nummer_1 / nummer_2);
+                break;
+
+        }
+    }
+
+
+
+}
