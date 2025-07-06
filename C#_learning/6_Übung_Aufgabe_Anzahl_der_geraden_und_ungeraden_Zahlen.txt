@@ -1,0 +1,43 @@
+/*
+Schreiben Sie ein Programm, das die Anzahl der geraden und ungeraden Zahlen zählt.
+Der Benutzer gibt eine positive ganze Zahl ein. 
+Das Programm soll alle Zahlen von dieser Zahl bis 1 überprüfen und am Ende ausgeben:
+wie viele gerade Zahlen gefunden wurden,
+wie viele ungerade Zahlen gefunden wurden.
+*/
+
+using System;
+using System.Diagnostics.Metrics;
+using System.Reflection.PortableExecutable;
+using System.Threading.Channels;
+
+class Program
+{
+    static void Main()
+    {
+        // Aufgabe: Anzahl der geraden und ungeraden Zahlen
+        Console.WriteLine("Geben Sie eine Zahl ein");
+        int gerader = 0;
+        int ungerade = 0;
+        int nummer = int.Parse(Console.ReadLine()); ;
+       
+        while (nummer != 0)
+        {
+            if (nummer % 2 == 0)
+            {
+                gerader++;
+            }
+            else
+            {
+                ungerade++;
+            }
+            --nummer; 
+        }
+        Console.WriteLine($"Anzahl der geraden Zahlen: {gerader}");
+        Console.WriteLine($"Anzahl der ungeraden Zahlen: {ungerade}");
+    }
+}
+
+
+
+
