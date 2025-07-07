@@ -1,0 +1,22 @@
+/*
+Schreiben Sie ein Programm, das die Summe aller Zahlen von 1 bis n berechnet. 
+Der Benutzer gibt eine Zahl n ein, und das Programm gibt die Gesamtsumme aus.
+*/
+
+using System;
+using System.Diagnostics.Metrics;
+using System.Reflection.PortableExecutable;
+using System.Threading.Channels;
+
+class Program
+{
+    static void Main()
+    {
+       int n = int.Parse(Console.ReadLine());
+        int sum = 0;
+        for (int i = 1; i <= n; i++) { 
+            sum += i;
+        }
+        Console.WriteLine($"Summe der Zahlen von 1 bis 5 = {sum}");
+    }
+}
