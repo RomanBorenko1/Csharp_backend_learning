@@ -1,0 +1,53 @@
+using System;
+
+/*
+Aufgabe: Nur gerade Zahlen ausgeben
+Beschreibung:
+Gib alle geraden Zahlen von 1 bis 100 aus.
+*/
+
+
+int number = int.Parse(Console.ReadLine());
+
+for (int i = 1; i < number; i++)
+{
+    if (i % 2 == 0)
+    { Console.WriteLine(i); }
+    {
+
+    }
+}
+
+
+
+
+/*
+Aufgabe: Fakultät berechnen
+Beschreibung:
+Lies eine Zahl n ein und berechne n! (Fakultät).
+*/
+
+
+
+int n = int.Parse(Console.ReadLine());
+int f_result = 1;
+for (int i = 1; i <= n; i++)
+{
+    f_result *= i;
+}
+Console.WriteLine(f_result);
+
+
+
+/*
+Aufgabe: Multiplikationstabelle
+Beschreibung:
+Erstelle eine Multiplikationstabelle für eine eingegebene Zahl n (von 1 bis 10).
+*/
+
+int nummer = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(nummer * i);
+}
