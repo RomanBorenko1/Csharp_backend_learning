@@ -1,0 +1,44 @@
+using System;
+
+/*
+Schreiben Sie ein Programm, das mit Hilfe von Schleifen folgendes Muster ausgibt:
+
+Zuerst wird ein aufsteigendes Dreieck aus #-Zeichen gedruckt, das bei 0 
+beginnt und bis 10 Reihen hochgeht.
+Danach folgt ein absteigendes Dreieck aus #-Zeichen von 10 Reihen zurück bis 0.
+Zwischen den beiden Mustern sollen zwei Leerzeilen eingefügt werden.
+Wiederholen Sie dieses Muster ein zweites Mal.
+*/
+
+
+
+
+
+for (int j = 0; j <= 10; j++)
+    { 
+        Console.WriteLine(new string('#', j));
+    }
+
+
+Console.WriteLine();
+Console.WriteLine();
+
+
+for (int i = 10; i >= 0; i--)
+    {
+        Console.WriteLine(new string('#', i));
+    }
+
+
+for (int j = 0; j <= 10; j++)
+{
+    Console.WriteLine(new string('#', j));
+}
+
+Console.WriteLine();
+Console.WriteLine();
+
+for (int i = 10; i >= 0; i--)
+{
+    Console.WriteLine(new string('#', i));
+}
