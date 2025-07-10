@@ -1,0 +1,28 @@
+using System;
+using System.Threading.Channels;
+
+/*
+Aufgabe: Frage den Benutzer nach einem Passwort. 
+Wenn das eingegebene Passwort korrekt ist, wird true ausgegeben, sonst false. 
+Verwende einen ternären Operator.
+*/
+string enterPassword = Console.ReadLine();
+bool assesAllowed;
+string password = "password";
+
+assesAllowed = enterPassword == password ? true :  false;
+Console.WriteLine(assesAllowed);
+
+
+/*
+Frage den Benutzer nach einer Zahl. 
+Wenn die Zahl gerade ist, soll „gerade“ ausgegeben werden, sonst „ungerade“. 
+Nutze einen ternären Operator.
+*/
+
+
+int number = int.Parse(Console.ReadLine());
+
+string result = (number % 2 == 0) ? "Gerade" : "Ungerade";
+
+Console.WriteLine(result);
