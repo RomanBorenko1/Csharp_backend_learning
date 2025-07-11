@@ -1,13 +1,22 @@
 /*
-Aufgabe: Schreibe ein C#‑Programm, das die Elemente eines Arrays in umgekehrter Reihenfolge ausgibt.
+Aufgabe: Schreibe ein C#‑Programm, das:
+1: die Elemente eines Arrays in umgekehrter Reihenfolge ausgibt,
+2: die Summe aller Elemente berechnet,
+3: das kleinste Element (Minimum) des Arrays bestimmt.
 Das Array enthält folgende Zahlen
 */
 
 int[] myArray = { 5, 10, 15, 20, 25 };
+int sum = 0;
+int min = myArray[0];
 
 for (int i = myArray.Length - 1; i >= 0; i--)
 {
-
+    sum += myArray[i];
     Console.WriteLine(myArray[i]);
+    if (myArray[i] < min)
+        min = myArray[i];
 }
+Console.WriteLine($"die Summe aller Elemente: {sum}");
+Console.WriteLine($"das kleinste Element: {min}");
 
