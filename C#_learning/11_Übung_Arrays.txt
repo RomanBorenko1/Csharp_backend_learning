@@ -17,6 +17,6 @@ for (int i = myArray.Length - 1; i >= 0; i--)
     if (myArray[i] < min)
         min = myArray[i];
 }
-Console.WriteLine($"die Summe aller Elemente: {sum}");
-Console.WriteLine($"das kleinste Element: {min}");
+Console.WriteLine($"die Summe aller Elemente:  {sum}");
+Console.WriteLine($"das kleinste Element:  {min}");
 
